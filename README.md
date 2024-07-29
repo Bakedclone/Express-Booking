@@ -2,6 +2,8 @@
 
 Express Booking is a Chrome extension designed to automate the ticket booking process on the IRCTC website. This extension aims to solve the problem of booking Tatkal tickets quickly, ensuring you get a confirmed ticket.
 
+![Express Booking Screenshot](screenshots/extension_screenshot.png)
+
 ## Features
 
 - **Pre-loaded Passenger List**: Have a list of passengers with their details ready to select at the time of booking.
@@ -28,7 +30,7 @@ Express Booking is a Chrome extension designed to automate the ticket booking pr
 
 ## Disclaimer
 
-This project is created solely for educational and learning purposes. It is not intended for commercial use or any form of misuse. The developers are not responsible for any consequences resulting from the improper use of this extension.
+This project is created solely for educational and learning purposes. It is not intended for commercial use or any form of misuse. The developer is not responsible for any consequences resulting from the improper use of this extension.
 
 ## Contributing
 
@@ -39,10 +41,6 @@ If you'd like to contribute to the project, please follow these steps:
 3. Make your changes and commit them (`git commit -m 'Add new feature'`).
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
