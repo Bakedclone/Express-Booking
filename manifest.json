@@ -1,0 +1,25 @@
+{
+  "name": "ExpressBooking",
+  "version": "1.0",
+  "description": "Automate IRCTC ticket booking",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.irctc.co.in/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.irctc.co.in/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_title": "ExpressBooking",
+    "default_popup": "popup.html",
+    "default_icon": "icons/logo.png"
+  },
+  "icons": {
+    "128": "icons/logo.png"
+  },
+  "manifest_version": 3
+}

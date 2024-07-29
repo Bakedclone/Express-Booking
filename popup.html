@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Express Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Express Booking</h1>
+    </div>
+
+    <div class="container">
+      <h2 class="label">TRAIN NO.</h2>
+      <div>
+        <input
+          class="inputText"
+          type="text"
+          id="trainNumber"
+          placeholder="Enter data"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="bodyheader">
+        <h2>Add New Passenger</h2>
+      </div>
+      <div>
+        <form id="addPassengerForm">
+          <div class="label">
+            <label for="passengerName">Name:</label>
+          </div>
+          <div>
+            <input class="inputText" type="text" id="passengerName" required />
+          </div>
+          <div class="container2">
+            <div class="box">
+              <div class="label">
+                <label for="passengerAge">Age:</label>
+              </div>
+              <div>
+                <input
+                  class="inputText"
+                  type="number"
+                  id="passengerAge"
+                  min="0"
+                  required
+                />
+              </div>
+            </div>
+            <div class="box">
+              <div class="label">
+                <label for="passengerGender">Gender:</label>
+              </div>
+              <select class="inputSelect" id="passengerGender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="T">Other</option>
+              </select>
+            </div>
+          </div>
+          <button
+            class="addpassenger-btn"
+            type="button"
+            id="addPassengerButton"
+          >
+            Add Passenger
+          </button>
+        </form>
+      </div>
+    </div>
+    <form id="passengerDetailsForm" class="passenger-form"></form>
+
+    <div class="container">
+      <fieldset>
+        <legend class="list-header">Passenger List</legend>
+        <ul id="passengerList"></ul>
+      </fieldset>
+    </div>
+
+    <button id="autofillButton">Autofill Form</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
